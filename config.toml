@@ -1,0 +1,177 @@
+# For a description of these parameters, please visit the theme wiki.
+# https://github.com/pacollins/hugo-future-imperfect-slim/wiki/config.toml
+baseurl                 = "https://mingtorr.github.io"
+DefaultContentLanguage  = "en"
+title                   = "행복한 토리의 코딩"
+theme                   = "hugo-future-imperfect-slim"
+paginate                = 10
+disqusShortname         = "https-mingotrr-github-io"
+googleAnalytics         = "G-JDMCZ2ZENL"
+pluralizeListTitles     = false
+disableLanguages        = []
+enableRobotsTXT = true
+canonifyURLs = true
+
+[markup.goldmark.renderer]
+  unsafe                = true
+
+[outputs]
+  home                  = ["html", "json", "rss"]
+
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+
+
+[params]
+  enableCDN             = false
+  cssFiles              = ["default"]
+  jsFiles               = ["default"]
+  highlightjs           = true
+  highlightjsTheme      = ""
+  highlightjsLang       = []
+  viewMorePostsLink     = "/"
+  readingTime           = true
+  imageStretch          = ""
+  removeBlur            = false
+  socialShare           = []
+  hideEmptyStats        = false
+
+  [params.meta]
+    description         = "for torry's churro"
+    author              = "박민철"
+    favicon             = false
+    svg                 = true
+    faviconVersion      = "1"
+    msColor             = "#ffffff"
+    iOSColor            = "#ffffff"
+
+  [params.header]
+    navbarTitle         = "Mingtorr"
+    dynamicTitles       = true
+    searchMenu          = true
+    shareMenu           = true
+    languageMenu        = true
+
+  [params.intro]
+    header                = "행복한 토리의 코딩"
+    paragraph             = "츄르값 벌기 위해 코딩하는 집사"
+    rssIntro              = true
+    socialIntro           = true
+    hideWhenSingleColumn  = false
+    alwaysOnHomepage      = false
+
+    [params.intro.pic]
+      src                 = "img/main/logo2.jpg"
+      shape               = "round"
+      width               = "300"
+      alt                 = "Hugo Future Imperfect Slim"
+
+  [params.sidebar]
+    about               = "츄르값 벌기 위해 코딩하는 집사"
+    postAmount          = 5
+    categories          = true
+    categoriesByCount   = true
+
+  [params.footer]
+    rssFooter           = true
+    socialFooter        = true
+
+  [params.staticman]
+    enabled             = true
+    api                 = ""  # No Trailing Slash
+    gitProvider         = ""
+    username            = ""
+    repo                = ""
+    branch              = ""
+
+    [params.staticman.recaptcha]
+      siteKey           = ""
+      encryptedKey      = ""
+
+[menu]
+
+  [[menu.main]]
+    name              = "Home"
+    identifier        = "home"
+    url               = "/"
+    pre               = "<i class='fa fa-home'></i>"
+    weight            = 1
+
+  [[menu.main]]
+    name              = "About"
+    identifier        = "about"
+    url               = "/about/"
+    pre               = "<i class='far fa-id-card'></i>"
+    weight            = 2
+
+  [[menu.main]]
+    name              = "Blog"
+    identifier        = "blog"
+    url               = "/blog/"
+    pre               = "<i class='far fa-newspaper'></i>"
+    weight            = 3
+
+  [[menu.main]]
+    name              = "Categories"
+    identifier        = "categories"
+    url               = "/categories/"
+    pre               = "<i class='fas fa-sitemap'></i>"
+    weight            = 5
+
+  [[menu.main]]
+    name              = "Contact"
+    identifier        = "contact"
+    url               = "/contact/"
+    pre               = "<i class='far fa-envelope'></i>"
+    weight            = 6
+
+[social]
+  # Coding Communities
+  github                = "pacollins/hugo-future-imperfect-slim"
+  gitlab                = ""
+  stackoverflow         = "" # User Number
+  bitbucket             = ""
+  jsfiddle              = ""
+  codepen               = ""
+  # Visual Art Communities
+  deviantart            = ""
+  flickr                = "example"
+  behance               = ""
+  dribbble              = ""
+  # Publishing Communities
+  wordpress             = ""
+  medium                = ""
+  # Professional/Business Oriented Communities
+  linkedin              = "example"
+  linkedin_company      = "examplebusiness"
+  foursquare            = ""
+  xing                  = ""
+  slideshare            = ""
+  # Social Networks
+  facebook              = "example"
+  googleplus            = ""
+  reddit                = "example"
+  quora                 = ""
+  youtube               = ""
+  vimeo                 = ""
+  whatsapp              = "" # WhatsApp Number
+    # WeChat and QQ need testing.
+    wechat              = ""
+    qq                  = "" # User ID Number
+  instagram             = "example"
+  tumblr                = ""
+  twitter               = "example"
+  strava                = ""
+  skype                 = ""
+  snapchat              = ""
+  pinterest             = "example"
+  telegram              = "example"
+  vine                  = ""
+  googlescholar         = ""
+  orcid                 = ""
+  researchgate          = "example"
+  keybase               = "example"
+  mastodon              = "example.com/@example"
+  # Email
+  email                 = "example"
